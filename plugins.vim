@@ -61,7 +61,7 @@ let SELF_DIR = expand("<sfile>:p:h")
 
 " NerdTreee
 " ширина окна с деревом файлов
-let NERDTreeWinSize=50
+let NERDTreeWinSize=40
 " автоматически обновлять буфер после переименовывания файла
 let NERDTreeAutoDeleteBuffer = 1
 " Disable bookmarks label, and hint about '?'
@@ -76,7 +76,19 @@ let NERDTreeQuitOnOpen=1
 let g:NERDTreeChDirMode=2
 " закрываем вместе с последним окном
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-nmap <C-\> :NERDTreeFind<CR>
+
+" nmap <C-\> :NERDTreeFind<CR>
+function MyNerdToggle()
+    if &filetype == 'nerdtree'
+        :NERDTreeToggle
+    else
+        :NERDTreeFind
+    endif
+endfunction
+
+nnoremap <C-\> :call MyNerdToggle()<CR>
+
+" nmap <silent> <C-D> :NERDTreeToggle<CR>
 let g:NERDTreeHijackNetrw = 1
 
 " TagBar
