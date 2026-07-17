@@ -228,11 +228,12 @@ let g:jedi#show_call_signatures = 0
 " let g:jedi#use_tabs_not_buffers = 0  " use buffers instead of tabs
 " let g:jedi#show_call_signatures = "1"
 " let g:jedi#documentation_command = "K"
-" let g:jedi#completions_command = "<C-Space>"
+let g:jedi#completions_command = "<C-Space>"
 let g:jedi#environment_path = ".venv"
-let g:jedi#goto_command = "<leader>g"
+let g:jedi#goto_command = "<leader>gg"
 let g:jedi#goto_definitions_command = "<leader>gd"
 let g:jedi#goto_assignments_command = "<leader>ga"
+let g:jedi#goto_stubs_command = "<leader>gs"
 let g:jedi#usages_command = "<leader>u"
 let g:jedi#rename_command = "<leader><leader>r"
 
