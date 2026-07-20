@@ -15,7 +15,7 @@ call plug#begin('~/.vim/plugged')
 " COMMON
 Plug 'scrooloose/nerdtree'
 " Plug 'scrooloose/nerdtree', {'on': ['NERDTreeToggle', 'NERDTreeFind']}
-Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
+" Plug 'preservim/tagbar', {'on': 'TagbarToggle'}
 Plug 'terryma/vim-multiple-cursors'
 Plug 'thinca/vim-quickrun'
 Plug 'neomake/neomake'                "Syntastic alternative
@@ -91,16 +91,16 @@ nnoremap <C-\> :call MyNerdToggle()<CR>
 " nmap <silent> <C-D> :NERDTreeToggle<CR>
 let g:NERDTreeHijackNetrw = 1
 
-" TagBar
-let g:tagbar_autofocus = 1 " автофокус на Tagbar при открытии
-" сортировать в том порядке, в котором тег появляется в коде, а не по имени
-let g:tagbar_sort = 0
-" If you set this option the Tagbar window will automatically close when you jump to a tag.
-let g:tagbar_autoclose = 1
-" Setting this option will result in Tagbar omitting the short help at the
-" top of the window and the blank lines in between top-level scopes in order to
-" save screen real estate.
-let g:tagbar_compact = 1
+" " TagBar
+" let g:tagbar_autofocus = 1 " автофокус на Tagbar при открытии
+" " сортировать в том порядке, в котором тег появляется в коде, а не по имени
+" let g:tagbar_sort = 0
+" " If you set this option the Tagbar window will automatically close when you jump to a tag.
+" let g:tagbar_autoclose = 1
+" " Setting this option will result in Tagbar omitting the short help at the
+" " top of the window and the blank lines in between top-level scopes in order to
+" " save screen real estate.
+" let g:tagbar_compact = 1
 
 
 " QuickRun

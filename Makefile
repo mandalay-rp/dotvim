@@ -5,7 +5,7 @@ VIMDIR_DEST=$(HOME)/.vim/
 
 
 preinstall:
-	@if [ -z $(which ctags) ]; then sudo apt install ctags -y; fi
+	# @if [ -z $(which ctags) ]; then sudo apt install ctags -y; fi
 	@if [ -z $(which tmux) ]; then \
 		git clone https://github.com/dalay/dottmux $(HOME)/.tmux; fi && \
 		cd $(HOME)/.tmux && make install
